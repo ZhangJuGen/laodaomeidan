@@ -27,5 +27,6 @@ class Test_01(unittest.TestCase):
     def test_1login(self):
         self.login.go_to_login(self.userName,self.passWord)
 
+    @unittest.skip
     def test_2add_dictionaries(self):
         self.index.go_to_dictionaries().add_dictionaries()
